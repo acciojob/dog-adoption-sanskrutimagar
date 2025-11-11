@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>Dog Breeds Gallery</title>
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .links-section {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        .links-section p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h1>Dog Breeds Showcase</h1>
+
+    <h2>Image Grid</h2>
+    <div class="image-grid">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/BassetHound_profil.jpg" 
+             alt="Basset Hound profile">
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Full_attention_%288067543690%29.jpg/1280px-Full_attention_%288067543690%29.jpg" 
+             alt="Dog with full attention">
+    </div>
+
+    <hr>
+
+    <div class="links-section">
+        <h2>Related Dog Breed Information</h2>
+        <p>Click the links below to learn more about specific breeds:</p>
+        
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Golden_Retriever" target="_blank">Golden Retriever (Wikipedia)</a>
+        </p>
+        
+        <p>
+            <a href="https://en.wikipedia.org/wiki/Poodle" target="_blank">Poodle (Wikipedia)</a>
+        </p>
+    </div>
 
 </body>
-
 </html>
